@@ -27,6 +27,3 @@ services:
         - TM_APP_API_URL=http://localhost/api
     volumes:
       - ".:/usr/src/app"
-    labels:
-      - traefik.http.routers.frontend.rule=Host(`localhost`)
-      - traefik.http.services.frontend.loadbalancer.server.port=80
